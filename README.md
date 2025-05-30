@@ -28,7 +28,7 @@ Parsing TLV manually can be tedious; this tool makes it easier to visualize and 
 ## Usage
 
 1. Paste your TLV payload in the input box.  
-2. Click **Pretty, please!**  
+2. Click **Convert**  
 3. View the parsed and formatted JSON output below.
 
 ---
