@@ -1,6 +1,6 @@
-# TLV Viewer — Convert TLV to JSON Easily
+# TLV Viewer — Convert TLV to JSON
 
-![TLV Viewer](logo.png)
+![TLV Viewer](logo.jpg)
 
 **TLV Viewer** is a simple and clean web tool to parse and pretty-print TLV (Type-Length-Value) encoded data into readable JSON format. 
 
