@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TLV to JSON</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="Converts and validates TLV string" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+  <div class="min-h-screen flex items-center justify-center px-4">
+    <div class="bg-white shadow-2xl rounded-2xl p-8 max-w-4xl w-full my-4">
+      <div class="text-center mb-6">
+        <img src="logo.jpg" alt="Logo" class="mx-auto h-16" />
+        <h1 class="text-2xl font-bold mt-4">TLV to JSON</h1>
+        <p class="mt-2 text-sm text-gray-600">
+          Convert your
+          <a href="https://en.wikipedia.org/wiki/Type%E2%80%93length%E2%80%93value" class="text-blue-500 underline" target="_blank">TLV</a>
+          (Tag/Type-Length-Value) to JSON.
+        </p>
+        <p class="text-xs mt-1 text-gray-500">
+          Created by <a href="https://github.com/tomxposed" class="text-blue-500">@tomxposed</a>.
+          Star or raise an issue on
+          <a href="https://github.com/tomxposed/tlv-to-json" class="text-blue-500">GitHub</a>!
+        </p>
+      </div>
+
+      <textarea id="payload" rows="6" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Paste your TLV string here..."></textarea>
+
+      <div class="flex justify-center mt-6">
+        <button id="prettierBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200">
+          Convert
+        </button>
+      </div>
+
+      <div class="mt-4 text-sm text-center text-red-500" hidden id="oops">
+        Oops! Invalid TLV string 😵
+      </div>
+      <div class="mt-4 text-sm text-center text-green-600" hidden id="great">
+        Voila 🔥
+      </div>
+
+      <pre id="resultBox" class="mt-4 p-4 bg-gray-900 text-green-400 text-sm rounded-lg overflow-x-auto whitespace-pre-wrap break-words" hidden>
+
+<code id="result" class="language-json"></code>
+      </pre>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
